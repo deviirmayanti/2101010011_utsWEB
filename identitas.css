@@ -1,0 +1,174 @@
+/* Atur body untuk tata letak halaman yang tengah */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #e0f7fa; /* Warna latar belakang netral */
+  font-family: "Arial", sans-serif;
+  color: #ffffff; /* Warna teks menjadi putih untuk kontras dengan navy */
+  margin: 0;
+  padding: 20px;
+}
+
+/* Mengatur kontainer utama */
+.container {
+  background-color: #ffffff; /* Warna kontainer */
+  width: 90%;
+  max-width: 1200px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  display: flex; /* Menyusun konten dalam baris */
+}
+
+/* Kolom kiri */
+.left-column {
+  flex: 1; /* Menetapkan lebar kolom kiri */
+  margin-right: 20px; /* Spasi antara kolom kiri dan kanan */
+}
+
+/* Kolom kanan */
+.right-column {
+  flex: 2; /* Menetapkan lebar kolom kanan */
+}
+
+/* Bagian profil di sebelah kiri */
+.profile-header {
+  display: flex;
+  flex-direction: column; /* Menyusun item secara kolom */
+  align-items: center; /* Menyelaraskan item secara horizontal */
+  text-align: center;
+  margin-bottom: 20px; /* Spasi di bawah profil */
+}
+
+.profile-header .avatar img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #07453e; /* Warna border gambar */
+  transition: transform 0.3s;
+  margin-bottom: 10px; /* Spasi antara foto dan nama */
+}
+
+.profile-header h1 {
+  font-size: 2em;
+  color: #00796b; /* Warna nama */
+  margin: 0; /* Menghapus margin untuk penyelarasan yang lebih baik */
+}
+
+/* Bagian Keahlian */
+.skills-section {
+  background-color: #00796b; /* Warna latar belakang untuk bagian keahlian */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px; /* Spasi di bawah bagian keahlian */
+  text-align: center; /* Menyelaraskan teks di tengah */
+}
+
+.skills-list {
+  list-style-type: none; /* Menghapus bullet point dari daftar */
+  padding: 0; /* Menghapus padding default */
+}
+
+.skills-list li {
+  font-size: 1.2em; /* Ukuran font untuk daftar keahlian */
+  color: #ffffff; /* Warna teks untuk daftar */
+  margin: 10px 0; /* Spasi antara item daftar */
+}
+
+/* Bagian Pendidikan */
+.education-section {
+  background-color: #00796b; /* Warna latar belakang untuk pendidikan */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center; /* Menyelaraskan teks di tengah */
+  margin-bottom: 20px; /* Spasi di bawah bagian pendidikan */
+}
+
+/* Bagian Konten */
+.content {
+  display: flex;
+  flex-direction: column; /* Menyusun konten dalam kolom */
+  width: 100%; /* Mengambil lebar penuh */
+}
+
+/* Bagian Kontak */
+.contact-section {
+  background-color: #00796b; /* Warna latar belakang kontak */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px; /* Spasi di bawah bagian kontak */
+  text-align: center; /* Menyelaraskan teks di tengah */
+}
+
+.contact-section h2 {
+  color: #ffffff; /* Warna teks untuk judul kontak */
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around; /* Mengatur item untuk berjajar */
+  align-items: center; /* Menjaga semua item sejajar secara vertikal */
+  font-size: 1.1em;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #ffffff; /* Warna teks link */
+  text-align: center; /* Agar teks berada di tengah */
+  transition: background-color 0.3s;
+}
+
+.contact a:hover {
+  background-color: #005f50; /* Warna latar belakang saat hover */
+  color: #ffffff; /* Warna teks saat hover */
+}
+
+.contact i {
+  font-size: 2em; /* Ukuran ikon */
+  display: block; /* Menjadikan ikon dalam satu blok */
+  margin-bottom: 5px; /* Spasi di bawah ikon */
+}
+
+/* Profile Content */
+.profile-content {
+  display: flex;
+  flex-direction: column; /* Menyusun bagian dalam konten secara kolom */
+}
+
+/* Sub-bagian di dalam content */
+.about-me,
+.experience {
+  background-color: #00796b; /* Mengubah warna latar belakang untuk about me dan experience */
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%; /* Memastikan bagian mengambil lebar penuh */
+  text-align: center; /* Menyelaraskan teks di tengah */
+  margin-bottom: 20px; /* Spasi antara bagian */
+}
+
+.about-me h2,
+.experience h2 {
+  color: #ffffff; /* Mengubah warna judul menjadi putih */
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.des {
+  font-size: 1em;
+  line-height: 1.6;
+  padding: 15px;
+  border: 2px solid #009688; /* Warna border */
+  border-radius: 10px;
+  font-style: italic;
+  background-color: #004d40; /* Mengubah warna latar belakang deskripsi menjadi gelap */
+  color: #ffffff; /* Mengubah warna teks deskripsi menjadi putih untuk kontras yang lebih baik */
+  transition: background-color 0.3s;
+}
+
+.des:hover {
+  background-color: #e0f2f1; /* Warna saat hover */
+}
